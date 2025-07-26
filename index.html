@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Kanazawa's homepage</title>
     <title>homepage</title>
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="theme-selector">
+            <span class="icon">🌙</span>
+            <select id="theme-select">
+                <option value="system">System</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#careers">careers</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#sns">sns</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Hi! I'm Kanazawa</h1>
+
+        <div>
+            <h2 id="about">ABOUT</h2>
+            <div>
+                <img src="images/214425968.jpeg" alt="">
+            </div>
+            <div>
+                <p>My name is Kanazawa.<br>I am currently a first-year master's student at Akita Prefectural University,
+                    majoring in algorithms. <br>I want to become a software engineer.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h2 id="skills">SKILLS</h2>
+        </div>
+
+        <div>
+            <h2 id="careers">CAREERS</h2>
+        </div>
+
+        <div>
+            <h2 id="works">WORKS</h2>
+        </div>
+
+        <div>
+            <h2 id="sns">SNS</h2>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>

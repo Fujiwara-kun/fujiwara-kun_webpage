@@ -1,3 +1,78 @@
-body{
-    background-color:black;
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+html[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+html[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* トグルUIを右上に配置 */
+.theme-selector {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid #888;
+  border-radius: 8px;
+  padding: 0.5rem;
+  z-index: 9999;
+}
+
+.theme-selector select {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+}
+
+ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0 auto;
+  z-index: 20;
+}
+
+ul li {
+  display: inline-block;
+  padding: 26px 10px 20px 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ホバー時 */
+a:hover {
+  text-decoration: underline;
+}
+
+/* ダークモード時のリンク色 */
+html[data-theme="dark"] a {
+  color: white;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
